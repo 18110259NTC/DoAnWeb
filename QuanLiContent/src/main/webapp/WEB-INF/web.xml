@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>QuanLiContent</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.hibernate.controller.LoginController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegisterController</servlet-name>
+		<servlet-class>com.hibernate.controller.RegisterController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RegisterController</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditController</servlet-name>
+		<servlet-class>com.hibernate.controller.EditController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EditController</servlet-name>
+		<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LogoutController</servlet-name>
+		<servlet-class>com.hibernate.controller.LogoutController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LogoutController</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ViewCotentController</servlet-name>
+		<servlet-class>com.hibernate.controller.ViewCotentController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ViewCotentController</servlet-name>
+		<url-pattern>/content</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FormContentController</servlet-name>
+		<servlet-class>com.hibernate.controller.FormContentController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FormContentController</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AddContentController</servlet-name>
+		<servlet-class>com.hibernate.controller.AddContentController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddContentController</servlet-name>
+		<url-pattern>/addContent</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UpdateContentController</servlet-name>
+		<servlet-class>com.hibernate.controller.UpdateContentController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateContentController</servlet-name>
+		<url-pattern>/updateContent</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteContentControler</servlet-name>
+		<servlet-class>com.hibernate.controller.DeleteContentControler</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeleteContentControler</servlet-name>
+		<url-pattern>/deleteContent</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SearchController</servlet-name>
+		<servlet-class>com.hibernate.controller.SearchController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SearchController</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+</web-app>
